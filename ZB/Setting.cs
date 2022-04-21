@@ -7,14 +7,29 @@ using System.Threading.Tasks;
 
 namespace ZB
 {
+    /// <summary>
+    /// 配置
+    /// </summary>
     public class Setting
     {
+        /// <summary>
+        /// 邮箱服务地址
+        /// </summary>
         public string Smtp { get; set; }
 
+        /// <summary>
+        /// 用户名
+        /// </summary>
         public string UserName { get; set; }
 
+        /// <summary>
+        /// 授权码
+        /// </summary>
         public string Password { get; set; }
 
+        /// <summary>
+        /// 发送邮件列表
+        /// </summary>
         public string EmailList { get; set; }
 
         public static Setting Load()
